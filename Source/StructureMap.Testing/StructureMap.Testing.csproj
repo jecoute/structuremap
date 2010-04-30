@@ -193,7 +193,6 @@
     <Compile Include="Bugs\CloseOpenGenericsWithSomeSpecifics.cs" />
     <Compile Include="Bugs\EnumerableShouldGetAllValuesTester.cs" />
     <Compile Include="Bugs\FillAllPropertiesShouldWorkForAlreadyConfiguredPluginsBug.cs" />
-    <Compile Include="Bugs\HttpSessionNullRefBug.cs" />
     <Compile Include="Bugs\IDictionaryAndXmlBugTester.cs" />
     <Compile Include="Bugs\InjectByFuncWithNoPublicConstructors.cs" />
     <Compile Include="Bugs\LambdaCreatesNullBugTester.cs" />
@@ -374,7 +373,6 @@
     <Compile Include="Pipeline\ContainerIsInTheContainerTester.cs" />
     <Compile Include="Pipeline\DefaultInstanceTester.cs" />
     <Compile Include="Pipeline\GenericsHelperExpressionTester.cs" />
-    <Compile Include="Pipeline\HybridBuildLifecycleTester.cs" />
     <Compile Include="Pipeline\InstanceTester.cs" />
     <Compile Include="Pipeline\LazyFuncTester.cs" />
     <Compile Include="Pipeline\MainObjectCacheTester.cs" />

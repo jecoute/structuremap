@@ -185,13 +185,6 @@ namespace StructureMap.Configuration.DSL.Expressions
         SerializedInstance SerializedCopyOf(T template);
 
         /// <summary>
-        /// Creates an Instance that will load an ASCX user control from the url
-        /// </summary>
-        /// <param name="url"></param>
-        /// <returns></returns>
-        UserControlInstance LoadControlFrom(string url);
-
-        /// <summary>
         /// Creates an Instance according to conditional rules
         /// </summary>
         /// <param name="configuration"></param>
@@ -283,11 +276,6 @@ namespace StructureMap.Configuration.DSL.Expressions
         public SerializedInstance SerializedCopyOf(T template)
         {
             return returnInstance(new SerializedInstance(template));
-        }
-
-        public UserControlInstance LoadControlFrom(string url)
-        {
-            return returnInstance(new UserControlInstance(url));
         }
 
         public ConditionalInstance<T> Conditional(

@@ -1,5 +1,5 @@
+using System;
 using System.Collections;
-using System.Web;
 
 namespace StructureMap.Pipeline
 {
@@ -38,7 +38,7 @@ namespace StructureMap.Pipeline
 
         public static bool HasContext()
         {
-            return HttpContext.Current != null;
+            throw new InvalidOperationException(typeof(HttpContextLifecycle).Name + " is not supported in the Client Profile version of StructureMap");
         }
 
         public static void DisposeAndClearAll()
@@ -49,7 +49,7 @@ namespace StructureMap.Pipeline
 
         protected virtual IDictionary findHttpDictionary()
         {
-            return HttpContext.Current.Items;
+            throw new InvalidOperationException(GetType().Name + " is not supported in the Client Profile version of StructureMap");
         }
     }
 }

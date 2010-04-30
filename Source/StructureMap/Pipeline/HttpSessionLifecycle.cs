@@ -1,5 +1,5 @@
+using System;
 using System.Collections;
-using System.Web;
 
 namespace StructureMap.Pipeline
 {
@@ -7,7 +7,7 @@ namespace StructureMap.Pipeline
     {
         protected override IDictionary findHttpDictionary()
         {
-            return new SessionWrapper(HttpContext.Current.Session);
+            throw new InvalidOperationException(GetType().Name + " is not supported in the Client Profile version of StructureMap");
         }
     }
 }

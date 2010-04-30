@@ -118,9 +118,6 @@
     <Reference Include="System.Data">
       <Name>System.Data</Name>
     </Reference>
-    <Reference Include="System.Web">
-      <Name>System.Web</Name>
-    </Reference>
     <Reference Include="System.Xml">
       <Name>System.XML</Name>
     </Reference>
@@ -166,7 +163,6 @@
     <Compile Include="Pipeline\ProfileManager.cs" />
     <Compile Include="Pipeline\PrototypeInstance.cs" />
     <Compile Include="Pipeline\ReferencedInstance.cs" />
-    <Compile Include="Pipeline\UserControlInstance.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -393,7 +389,6 @@
     <Compile Include="Pipeline\MainObjectCache.cs" />
     <Compile Include="Pipeline\NulloObjectCache.cs" />
     <Compile Include="Pipeline\ObjectBuilder.cs" />
-    <Compile Include="Pipeline\SessionWrapper.cs" />
     <Compile Include="Pipeline\SingletonLifecycle.cs" />
     <Compile Include="Pipeline\ThreadLocalStorageLifecycle.cs" />
     <Compile Include="Pipeline\UniquePerRequestLifecycle.cs" />
